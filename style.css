@@ -92,21 +92,83 @@ color: white;
   color: #FF900E;
 
 }
+.skills{
+  gap: 7px;
+  margin-top: 130px;
+
+  
+}
+
+.skill-box {
+  /* max-width: 586px; */
+  padding: 10px;
+  border-radius: 8px;
+}
+.id{
+  max-width: 686px;
+}
+.facts-cont{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+.facts{
+  border: 1px solid rgb(254, 168, 54);
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+ 
+}
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.fact-name{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+
+
 /* responsive media query */
 @media screen and (max-width:576px) {
-  .navbar, .nav-link, .teams{
+  .navbar, .nav-link, .teams,.skills{
     flex-direction: column;
   }
-  .img{
+  .img, .facts-cont{
     grid-template-columns: repeat(1, 1fr);
   }
   .our-features{
     margin-left: 20px;
   }
+  .facts-cont{
+    gap:10px;
+    justify-items: center;
+  
+  }
+ 
 }
 /* medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .teams{
     flex-direction: column;
+  }
+  .facts-cont{
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 100px;
+  }
+  .skills{
+    flex-direction: column;
+  }
+  .imgg{
+    width:80%;
   }
 }
