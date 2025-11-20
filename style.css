@@ -93,15 +93,15 @@ color: white;
 
 }
 .skills{
-  gap: 7px;
+  gap: 50px;
   margin-top: 130px;
 
   
 }
 
 .skill-box {
-  /* max-width: 586px; */
-  padding: 10px;
+   max-width: 500px;
+  padding: 2px;
   border-radius: 8px;
 }
 .id{
@@ -110,6 +110,7 @@ color: white;
 .facts-cont{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
   
 }
 .facts{
@@ -150,6 +151,21 @@ color: white;
 .sponsors-comp img{
   filter: grayscale(85%);
 }
+#vv{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+#btn{
+  padiing:45px 42px;
+  margin-top: -120px;
+  margin-left: -75px;
+}
+.foot{
+  text-align: center;
+  padding: 10px;
+  background-color: #FFF4E7;
+  border-radius: 8px;
+}
 
 
 
@@ -174,6 +190,9 @@ color: white;
     gap: 10px;
     
   }
+ #btn{
+  margin-left: 0px;
+ }
  
 }
 /* medium devices */
