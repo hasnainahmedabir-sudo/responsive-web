@@ -135,6 +135,21 @@ color: white;
   font-weight: 600;
   margin-bottom: 5px;
 }
+.sponsor-info{
+  max-width:586px;
+  text-align: center;
+  margin: 50px auto;
+}
+.sponsors-comp{
+  display: grid;
+ 
+  grid-template-columns: repeat(5, 1fr);
+ 
+
+}
+.sponsors-comp img{
+  filter: grayscale(85%);
+}
 
 
 
@@ -143,7 +158,7 @@ color: white;
   .navbar, .nav-link, .teams,.skills{
     flex-direction: column;
   }
-  .img, .facts-cont{
+  .img, .facts-cont, .sponsors-comp{
     grid-template-columns: repeat(1, 1fr);
   }
   .our-features{
@@ -154,6 +169,11 @@ color: white;
     justify-items: center;
   
   }
+  .sponsors-comp{
+    justify-items: center;
+    gap: 10px;
+    
+  }
  
 }
 /* medium devices */
@@ -161,7 +181,7 @@ color: white;
   .teams{
     flex-direction: column;
   }
-  .facts-cont{
+  .facts-cont, .sponsors-comp{
     grid-template-columns: repeat(2, 1fr);
     margin-left: 100px;
   }
